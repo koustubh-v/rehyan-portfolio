@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Mail, Linkedin } from 'lucide-react';
+import { Github, Linkedin,Instagram  } from 'lucide-react';
 
 const TypeWriter = ({ text, speed = 100 }) => {
   const [displayText, setDisplayText] = useState('');
@@ -44,24 +44,24 @@ const FadeIn = ({ children, delay = 0 }) => {
 const Portfolio = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
+      title: "Megaheartz Robotics",
       description: "Full-stack e-commerce solution with React and Node.js",
-      image: "/api/placeholder/600/400"
+      image: "https://i.ibb.co/bv7WWWX/Screenshot-20241220-124912-Whats-App-1.jpg"
     },
     {
-      title: "Fitness App",
+      title: "AlphaCodes",
       description: "Cross-platform mobile app built with Flutter",
-      image: "/api/placeholder/600/400"
+      image: "https://i.ibb.co/kcNB4pz/Screenshot-2024-12-22-063724.png"
     },
     {
-      title: "AI Chat Application",
-      description: "Real-time chat app with AI integration using OpenAI",
-      image: "/api/placeholder/600/400"
+      title: "Task Managment Application",
+      description: "Flutter Based Time Managment App with Advanced Features",
+      image: "https://rehyanyadav.github.io/My_portfolio01/assets/img/portfolio/portfolio-6.jpg"
     },
     {
-      title: "Portfolio Generator",
-      description: "Dynamic portfolio website generator with custom themes",
-      image: "/api/placeholder/600/400"
+      title: "Travel Website",
+      description: "Dynamic travel website with custom theme",
+      image: "https://rehyanyadav.github.io/My_portfolio01/assets/img/portfolio/portfolio-4.jpg"
     }
   ];
 
@@ -86,38 +86,38 @@ const Portfolio = () => {
   const pricingPlans = [
     {
       title: "Basic",
-      price: "$999",
+      price: "₹ 7000",
       features: [
-        "5 Pages",
-        "Responsive Design",
-        "Basic SEO",
-        "Contact Form",
-        "Mobile Friendly"
+        "3-5 Screens",
+        "Basic Wireframes",
+        "1 Revision Round",
+        "Mobile Friendly",
+        "Timeline : 1-2 Weeks",
       ]
     },
     {
-      title: "Professional",
-      price: "$2499",
+      title: "Premium",
+      price: "₹ 13000",
       features: [
-        "10 Pages",
-        "Advanced Design",
-        "Advanced SEO",
+        "6-10 Screens",
+        "High-Fidelity Wireframes",
+        "Clickable Prototype",
         "CMS Integration",
-        "E-commerce Features",
-        "Custom Animations"
+        "2 Revision Rounds",
+        "Timeline : 2-4 Weeks"
       ],
       isPopular: true
     },
     {
-      title: "Enterprise",
-      price: "Custom",
+      title: "Custom",
+      price: "Contact for Pricing",
       features: [
-        "Unlimited Pages",
-        "Custom Features",
-        "Priority Support",
-        "Custom Integration",
-        "Advanced Security",
-        "Performance Optimization"
+        "10+ Screens",
+        "Full UX Research",
+        "Low & High-Fidelity Wireframes",
+        "User Testing",
+        "3 Revision Rounds",
+        "Timeline : 4-6 Weeks"
       ]
     }
   ];
@@ -133,7 +133,7 @@ const Portfolio = () => {
               <TypeWriter text="Rehyan Yadav" speed={150} />
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
-              Cross Platform App Developer & Tech Innovator
+              Founder of AlphaCodes & Cross Platform App Developer
             </p>
             <button
   className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full transition-all transform hover:scale-105"
@@ -174,7 +174,7 @@ const Portfolio = () => {
         <div className="container mx-auto px-6">
           <FadeIn>
             <h2 className="text-4xl font-bold mb-16 text-center">
-              Web Development Pricing
+              Web/Apps Pricing
             </h2>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -252,23 +252,23 @@ const Portfolio = () => {
       <FadeIn delay={400}>
         <div className="flex justify-center space-x-6">
           <a
-            href="#"
+            href="https://github.com/Rehyanyadav"
             className="p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transform hover:-translate-y-1 transition-all group"
           >
             <Github className="w-8 h-8 text-purple-400 group-hover:text-purple-300" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/rehyanyaduvanshi/"
             className="p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transform hover:-translate-y-1 transition-all group"
           >
             <Linkedin className="w-8 h-8 text-blue-400 group-hover:text-blue-300" />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/yaduvanshi101_/"
             className="p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transform hover:-translate-y-1 transition-all group"
           >
-            <Mail className="w-8 h-8 text-pink-400 group-hover:text-pink-300" />
-          </a>
+            <Instagram className="w-8 h-8 text-pink-400 group-hover:text-pink-300" />
+            </a>
         </div>
       </FadeIn>
     </div>
