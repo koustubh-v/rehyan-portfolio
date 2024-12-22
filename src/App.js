@@ -45,7 +45,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Megaheartz Robotics",
-      description: "Full-stack e-commerce solution with React and Node.js",
+      description: "Full-stack e-commerce solution with Flutter",
       image: "https://i.ibb.co/bv7WWWX/Screenshot-20241220-124912-Whats-App-1.jpg"
     },
     {
